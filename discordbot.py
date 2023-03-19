@@ -7,8 +7,9 @@ import re
 load_dotenv()
 
 TOKEN = os.environ['TOKEN']
+PREFIX = os.environ['PREFIX']
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot()
 
 @bot.event
 async def on_ready():
